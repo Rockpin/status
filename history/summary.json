@@ -1,0 +1,38 @@
+[
+  {
+    "name": "웹",
+    "url": "https://app.rockpin.ai",
+    "icon": "https://icons.duckduckgo.com/ip3/app.rockpin.ai.ico",
+    "slug": "웹",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 3450,
+    "timeDay": 3450,
+    "timeWeek": 3450,
+    "timeMonth": 3450,
+    "timeYear": 3450,
+    "dailyMinutesDown": {}
+  },
+  {
+    "name": "CDN",
+    "url": "https://cdn.rockpin.ai/static/health.txt",
+    "icon": "https://icons.duckduckgo.com/ip3/cdn.rockpin.ai.ico",
+    "slug": "cdn",
+    "status": "up",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
+    "time": 4139,
+    "timeDay": 4139,
+    "timeWeek": 4139,
+    "timeMonth": 4139,
+    "timeYear": 4139,
+    "dailyMinutesDown": {}
+  }
+]
