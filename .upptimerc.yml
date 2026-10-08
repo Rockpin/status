@@ -4,18 +4,18 @@ repo: status
 sites:
   - name: 웹
     slug: web
-    url: https://app.rockpin.ai
+    url: https://rockp.in
   - name: CDN
     slug: cdn
-    url: https://cdn.rockpin.ai/static/health.txt
+    url: https://cdn.rockp.in/static/health.txt
 
 status-website:
   baseUrl: /status
   name: Rockpin Status
   theme: light
-  logoUrl: https://cdn.rockpin.ai/static/brand/symbol-96.png
-  favicon: https://cdn.rockpin.ai/static/brand/symbol-96.png
-  faviconSvg: https://cdn.rockpin.ai/static/brand/symbol-96.png
+  logoUrl: https://cdn.rockp.in/static/brand/symbol-96.png
+  favicon: https://cdn.rockp.in/static/brand/symbol-96.png
+  faviconSvg: https://cdn.rockp.in/static/brand/symbol-96.png
   customHeadHtml: |
     <style>
       html:root {
@@ -49,7 +49,7 @@ status-website:
       nav .logo div {
         font-size: 0 !important; color: transparent !important;
         width: 82px; height: 24px;
-        background: url(https://cdn.rockpin.ai/static/brand/wordmark.svg) no-repeat left center / contain;
+        background: url(https://cdn.rockp.in/static/brand/wordmark.svg) no-repeat left center / contain;
       }
     </style>
   customBodyHtml: |
@@ -72,7 +72,7 @@ status-website:
     - title: 상태
       href: /
     - title: Rockpin
-      href: https://app.rockpin.ai
+      href: https://rockp.in
 
 i18n:
   activeIncidents: 진행 중인 장애
