@@ -1,31 +1,63 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: Rockpin
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: 웹
+    url: https://app.rockpin.ai
+  - name: CDN
+    url: https://cdn.rockpin.ai/static/health.txt
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  cname: status.rockpin.ai
+  name: Rockpin
+  introTitle: "**Rockpin** 서비스 상태"
+  introMessage: 각 서비스의 실시간 상태와 장애 기록을 확인할 수 있습니다.
   navbar:
-    - title: Status
+    - title: 상태
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Rockpin
+      href: https://app.rockpin.ai
 
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+i18n:
+  activeIncidents: 진행 중인 장애
+  allSystemsOperational: 모든 서비스가 정상 운영 중입니다
+  incidentReport: "장애 #$NUMBER 보고서 →"
+  activeIncidentSummary: $DATE에 시작, 업데이트 $POSTS건
+  incidentTitle: 장애 $NUMBER 상세
+  incidentDetails: 장애 상세
+  incidentFixed: 해결됨
+  incidentOngoing: 진행 중
+  incidentOpenedAt: 발생
+  incidentClosedAt: 해결
+  incidentSubscribe: 업데이트 구독
+  incidentViewOnGitHub: GitHub에서 보기
+  incidentCommentSummary: $DATE에 $AUTHOR 작성
+  incidentBack: ← 전체 장애 목록
+  pastIncidents: 지난 장애
+  pastIncidentsResolved: $MINUTES분 만에 해결, 업데이트 $POSTS건
+  liveStatus: 실시간 상태
+  overallUptime: "전체 가동률: $UPTIME"
+  overallUptimeTitle: 전체 가동률
+  averageResponseTime: "평균 응답 시간: $TIMEms"
+  averageResponseTimeTitle: 평균 응답 시간
+  sevelDayResponseTime: 7일 응답 시간
+  responseTimeMs: 응답 시간 (ms)
+  up: 정상
+  down: 장애
+  degraded: 지연
+  ms: ms
+  loading: 불러오는 중
+  navGitHub: GitHub
+  footer: ""
+  durationMin: $DURATION분
+  durationMins: $DURATION분
+  overall: 전체
+  uptime: 가동률
+  responseTime: 응답 시간
+  responseTimeGraphAlt: 응답 시간 그래프
+  startTime: 시작
+  endTime: 종료
+  duration: 지속 시간
+  outages: 장애 기록
+  durationWithinThisPeriod: 이 기간 동안의 장애 시간
+  noOutages: 장애 없음
