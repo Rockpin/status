@@ -1,0 +1,3 @@
+/rate-limit-exceeded / 301
+/history/* / 301
+/incident/* / 301
