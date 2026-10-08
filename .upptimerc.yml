@@ -18,13 +18,54 @@ status-website:
   faviconSvg: https://cdn.rockpin.ai/static/brand/symbol-96.png
   customHeadHtml: |
     <style>
-      nav .logo img { height: 28px !important; width: 28px !important; }
+      html:root {
+        --body-background-color: #ffffff;
+        --body-text-color: #000000;
+        --card-background-color: #ffffff;
+        --card-border-color: #e5e5e5;
+        --nav-background-color: #ffffff;
+        --nav-border-bottom-color: #e5e5e5;
+        --nav-current-border-bottom-color: #000000;
+        --up-border-left-color: #000000;
+        --degraded-border-left-color: #8a8a8a;
+        --down-border-left-color: #000000;
+        --down-background-color: #f2f2f2;
+        --tag-color: #ffffff;
+        --tag-up-background-color: #000000;
+        --tag-degraded-background-color: #8a8a8a;
+        --tag-down-background-color: #000000;
+        --change-background-color: #e5e5e5;
+        --error-button-border-color: #000000;
+        --error-button-background-color: #000000;
+        --error-button-color: #ffffff;
+        --submit-button-border-color: #000000;
+        --submit-button-background-color: #000000;
+        --submit-button-color: #ffffff;
+        --graph-filter: grayscale(100%);
+      }
+      .submit-button { background: #000 !important; color: #fff !important; }
+      img.graph, .graph img, section img:not(.icon) { filter: grayscale(100%); }
+      nav .logo img { display: none !important; }
       nav .logo div {
         font-size: 0 !important; color: transparent !important;
-        width: 82px; height: 24px; margin-left: 10px;
+        width: 82px; height: 24px;
         background: url(https://cdn.rockpin.ai/static/brand/wordmark.svg) no-repeat left center / contain;
       }
     </style>
+  customBodyHtml: |
+    <script>
+      (function () {
+        var strip = function () {
+          document.querySelectorAll('article').forEach(function (a) {
+            a.childNodes.forEach(function (n) {
+              if (n.nodeType === 3 && n.nodeValue.indexOf('✅') !== -1) n.nodeValue = '';
+            });
+          });
+        };
+        new MutationObserver(strip).observe(document.documentElement, { childList: true, subtree: true });
+        strip();
+      })();
+    </script>
   introTitle: "**Rockpin** 서비스 상태"
   introMessage: 각 서비스의 실시간 상태와 장애 기록을 확인할 수 있습니다.
   navbar:
@@ -36,7 +77,7 @@ status-website:
 i18n:
   activeIncidents: 진행 중인 장애
   allSystemsOperational: 모든 서비스가 정상 운영 중입니다
-  incidentReport: "장애 #$NUMBER 보고서 →"
+  incidentReport: "장애 #$NUMBER 보고서"
   activeIncidentSummary: $DATE에 시작, 업데이트 $POSTS건
   incidentTitle: 장애 $NUMBER 상세
   incidentDetails: 장애 상세
@@ -47,7 +88,7 @@ i18n:
   incidentSubscribe: 업데이트 구독
   incidentViewOnGitHub: GitHub에서 보기
   incidentCommentSummary: $DATE에 $AUTHOR 작성
-  incidentBack: ← 전체 장애 목록
+  incidentBack: 전체 장애 목록
   pastIncidents: 지난 장애
   pastIncidentsResolved: $MINUTES분 만에 해결, 업데이트 $POSTS건
   liveStatus: 실시간 상태
