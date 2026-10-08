@@ -10,7 +10,7 @@ sites:
     url: https://cdn.rockpin.ai/static/health.txt
 
 status-website:
-  cname: status.rockpin.ai
+  baseUrl: /status
   name: Rockpin Status
   theme: light
   logoUrl: https://cdn.rockpin.ai/static/brand/symbol-96.png
