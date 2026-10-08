@@ -17,13 +17,13 @@
 
 ## 구조
 
-| 역할 | 위치 |
-| --- | --- |
-| 감시 대상 설정 | `.upptimerc.yml` |
-| 감시 (5분마다) | GitHub Actions (Upptime) |
-| 감시 기록 | `history/`, `api/` (자동 생성) |
-| 장애 기록 | [Issues](https://github.com/Rockpin/status/issues) (자동 생성) |
-| 상태 페이지 화면 | `page/` → Cloudflare Pages → status.rockpin.ai |
+| 역할             | 위치                                                           |
+| ---------------- | -------------------------------------------------------------- |
+| 감시 대상 설정   | `.upptimerc.yml`                                               |
+| 감시 (5분마다)   | GitHub Actions (Upptime)                                       |
+| 감시 기록        | `history/`, `api/` (자동 생성)                                 |
+| 장애 기록        | [Issues](https://github.com/Rockpin/status/issues) (자동 생성) |
+| 상태 페이지 화면 | `page/` → Cloudflare Pages → status.rockpin.ai                 |
 
 - 감시 대상 추가·변경: `.upptimerc.yml`의 `sites` 수정
 - 화면 수정: `page/index.html` 수정 후 push (자동 배포)
