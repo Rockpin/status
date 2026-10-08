@@ -3,8 +3,10 @@ repo: status
 
 sites:
   - name: 웹
+    slug: web
     url: https://app.rockpin.ai
   - name: CDN
+    slug: cdn
     url: https://cdn.rockpin.ai/static/health.txt
 
 status-website:
