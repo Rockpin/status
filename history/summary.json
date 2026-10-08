@@ -1,26 +1,28 @@
 [
   {
     "name": "웹",
-    "url": "https://app.rockpin.ai",
-    "icon": "https://icons.duckduckgo.com/ip3/app.rockpin.ai.ico",
+    "url": "https://rockp.in",
+    "icon": "https://icons.duckduckgo.com/ip3/rockp.in.ico",
     "slug": "web",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
-    "time": 213,
-    "timeDay": 213,
-    "timeWeek": 213,
-    "timeMonth": 213,
-    "timeYear": 213,
-    "dailyMinutesDown": {}
+    "status": "down",
+    "uptime": "99.97%",
+    "uptimeDay": "99.97%",
+    "uptimeWeek": "99.97%",
+    "uptimeMonth": "99.97%",
+    "uptimeYear": "99.97%",
+    "time": 216,
+    "timeDay": 216,
+    "timeWeek": 216,
+    "timeMonth": 216,
+    "timeYear": 216,
+    "dailyMinutesDown": {
+      "2026-10-08": 0
+    }
   },
   {
     "name": "CDN",
-    "url": "https://cdn.rockpin.ai/static/health.txt",
-    "icon": "https://icons.duckduckgo.com/ip3/cdn.rockpin.ai.ico",
+    "url": "https://cdn.rockp.in/static/health.txt",
+    "icon": "https://icons.duckduckgo.com/ip3/cdn.rockp.in.ico",
     "slug": "cdn",
     "status": "up",
     "uptime": "100.00%",
@@ -28,11 +30,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1067,
-    "timeDay": 1067,
-    "timeWeek": 1067,
-    "timeMonth": 1067,
-    "timeYear": 1067,
+    "time": 1047,
+    "timeDay": 1047,
+    "timeWeek": 1047,
+    "timeMonth": 1047,
+    "timeYear": 1047,
     "dailyMinutesDown": {}
   }
 ]
