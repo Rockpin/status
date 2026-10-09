@@ -1,5 +1,7 @@
 name: Check
 
+# 5분마다 sites.json의 사이트를 확인하고 data/status.json을 갱신한다.
+
 on:
   schedule:
     - cron: '*/5 * * * *'
