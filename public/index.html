@@ -98,7 +98,7 @@
   <div class="tip" id="tip" role="tooltip"></div>
 
   <script>
-    const DATA = 'https://raw.githubusercontent.com/Rockpin/status/master/history/';
+    const DATA_URL = 'https://raw.githubusercontent.com/Rockpin/status/main/data/status.json';
     const DAYS = 90;
     const MAJOR_MINUTES = 60;
     const STATE_TEXT = { up: '정상', degraded: '지연', down: '장애' };
@@ -106,14 +106,6 @@
     const pad = n => String(n).padStart(2, '0');
     const dayKey = d => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
     const dayLabel = d => `${d.getFullYear()}년 ${d.getMonth() + 1}월 ${d.getDate()}일`;
-
-    async function startDate(slug) {
-      try {
-        const text = await fetch(DATA + slug + '.yml', { cache: 'no-cache' }).then(r => r.text());
-        const m = text.match(/^startTime:\s*(.+)$/m);
-        return m ? new Date(m[1].trim()) : null;
-      } catch { return null; }
-    }
 
     function days() {
       const out = [];
@@ -124,7 +116,8 @@
       return out;
     }
 
-    function renderComponent(site, start) {
+    function renderComponent(site) {
+      const start = site.since ? new Date(site.since) : null;
       const down = site.dailyMinutesDown || {};
       const startDay = start ? new Date(start.getFullYear(), start.getMonth(), start.getDate()) : null;
       let monitored = 0, minutes = 0;
@@ -203,10 +196,9 @@
     async function load() {
       const root = document.getElementById('components');
       try {
-        const sites = await fetch(DATA + 'summary.json', { cache: 'no-cache' }).then(r => r.json());
-        const starts = await Promise.all(sites.map(s => startDate(s.slug)));
+        const sites = await fetch(DATA_URL, { cache: 'no-cache' }).then(r => r.json());
         renderBanner(sites);
-        root.innerHTML = sites.map((s, i) => renderComponent(s, starts[i])).join('');
+        root.innerHTML = sites.map(renderComponent).join('');
         updateMobileLabel();
         const now = new Date();
         document.getElementById('updated').textContent =

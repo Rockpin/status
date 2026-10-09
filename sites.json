@@ -1,0 +1,4 @@
+[
+  { "slug": "web", "name": "웹", "url": "https://rockp.in" },
+  { "slug": "cdn", "name": "CDN", "url": "https://cdn.rockp.in/static/health.txt" }
+]

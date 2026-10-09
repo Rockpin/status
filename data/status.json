@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "web",
+    "name": "웹",
+    "url": "https://rockp.in",
+    "status": "up",
+    "since": "2026-10-08T06:30:16.282Z",
+    "dailyMinutesDown": {}
+  },
+  {
+    "slug": "cdn",
+    "name": "CDN",
+    "url": "https://cdn.rockp.in/static/health.txt",
+    "status": "up",
+    "since": "2026-10-08T06:27:36.911Z",
+    "dailyMinutesDown": {}
+  }
+]
