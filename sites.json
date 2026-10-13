@@ -1,4 +1,6 @@
 [
   { "slug": "web", "name": "웹", "url": "https://rockp.in" },
+  { "slug": "api", "name": "API", "url": "https://api.rockp.in/v1/health" },
+  { "slug": "agent", "name": "AI 에이전트", "url": "https://api.rockpin.dev/v1/health/agent" },
   { "slug": "cdn", "name": "CDN", "url": "https://cdn.rockp.in/static/health.txt" }
 ]
