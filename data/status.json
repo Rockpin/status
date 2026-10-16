@@ -11,7 +11,7 @@
     "slug": "api",
     "name": "API",
     "url": "https://api.rockp.in/v1/health",
-    "status": "up",
+    "status": "degraded",
     "since": "2026-10-13T16:11:28.488Z",
     "dailyMinutesDown": {}
   },
@@ -24,7 +24,8 @@
     "dailyMinutesDown": {
       "2026-10-14": 25,
       "2026-10-15": 25,
-      "2026-10-16": 30
+      "2026-10-16": 30,
+      "2026-10-17": 5
     }
   },
   {
