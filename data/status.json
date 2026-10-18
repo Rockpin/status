@@ -19,7 +19,7 @@
     "slug": "agent",
     "name": "AI 에이전트",
     "url": "https://api.rockpin.dev/v1/health/agent",
-    "status": "degraded",
+    "status": "down",
     "since": "2026-10-13T16:11:38.129Z",
     "dailyMinutesDown": {
       "2026-10-14": 25,
@@ -27,7 +27,7 @@
       "2026-10-16": 30,
       "2026-10-17": 25,
       "2026-10-18": 15,
-      "2026-10-19": 5
+      "2026-10-19": 10
     }
   },
   {
